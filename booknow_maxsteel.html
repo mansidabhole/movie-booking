@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BOOKING</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .jumbotron {
+    background-image:url("maxsteel.jpg");
+	background-repeat:no-repeat;
+	background-position:left;
+	color:#000000;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    }
+  .bg-1 {
+    background-color: #f4511e; /* Orange */
+	color: #ffffff;
+	padding-top: 70px;
+    padding-bottom:70px;
+	}
+   .logo {
+    color:#ff0000;
+    font-size:20px;	
+	}
+	.bg-2 {
+    background-color: #2f2f2f;
+    color: #ffffff;
+	padding-top: 70px;
+    padding-bottom: 70px;
+	}	
+  /*.navbar-nav li a:hover {
+    color: #1abc9c !important;
+	}
+  .bg-2 {
+    background-color: #2f2f2f;
+    color: #ffffff;
+	padding-top: 70px;
+    padding-bottom: 70px;
+	}*/ 
+   .bg-3 {
+   color:#2f2f2f;
+   }	
+   div.main{
+	float:left;
+	width:100px;
+	border:2px solid black;
+	padding:5px;
+	height:20px;
+	 border-collapse: separate;
+	border-spacing:10px 20px;
+}
+#subdiv
+{
+	float:left;
+        width:5px;
+	border:2px solid black;
+	padding:5px;	
+	height:2px;
+}
+div.main2{
+	float:left;
+	width:100px;
+	border:2px solid black;
+	padding:5px;
+	height:20px;
+	   border-collapse: separate;
+	border-spacing:10px 20px;
+}
+#subdiv2
+{	float:left;
+        width:5px;
+	border:2px solid black;
+	padding:5px;	
+	height:2px;
+}
+div.main3{
+	float:left;
+	width:100px;
+	border:2px solid black;
+	padding:5px;
+	height:20px;
+	   border-collapse: separate;
+	border-spacing:10px 20px;
+}
+#subdiv3
+{	float:left;
+        width:5px;
+	border:2px solid black;
+	padding:5px;	
+	height:2px;
+}
+div.main4{
+	float:left;
+	width:100px;
+	border:2px solid black;
+	padding:5px;
+	height:20px;
+	   border-collapse: separate;
+	border-spacing:10px 20px;
+}
+#subdiv4
+{	float:left;
+        width:5px;
+	border:2px solid black;
+	padding:5px;	
+	height:2px;
+}
+div:focus {
+    background-color:yellow;
+}
+	
+  </style>	
+</head>
+<body class="bg-1">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="#"><img src="its.jpg" width="100" height="60"></a>
+      <a class="navbar-brand" href="#">It's Show Time</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index2.php">Home</a></li>
+      <!--<li><a href="#"></a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+	<ul class="nav navbar-nav navbar-right">
+      <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#myModal" data-toggle="modal" id="myBtn"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    --></ul>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Tickets</h1>
+  <p>Book Here</p>
+</div>
+
+<div class="row">
+	<div class="col-md-1">
+	  <form><b>
+		<select class="bg-3">
+			<option> - DAY - </option>
+			<option value="1">Today</option>
+			<option value="2">Tomorrow</option>
+			<option value="3">29 Oct,Sat</option>
+			<option value="4">30 Oct,Sun</option>
+			<option value="5">31 Oct,Mon</option>
+		</select>
+	  </form>
+	</div></b>
+	<div class="col-md-1">
+	  <form class="form-inline"><b>
+		<select class="bg-3">
+			<option> -LANGUAGE- </option>       
+			<option value="1">English</option>
+			<option value="2">Hindi</option>
+		</select>
+	  </form>
+	</div></b>
+	
+	<div class="col-md-1">
+	  <form class="form-inline"><b>
+		<select class="bg-3">
+			<option> - 1D - </option>       
+
+			<option value="1">1D</option>
+			<option value="2">2D</option>
+			<option value="2">3D</option>
+		</select>
+	  </form>
+	</div></b>
+</div>
+
+<!--
+<div class="btn-group">
+  <div class="btn-group">  
+		<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+		Today<span class="caret"></span></button>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="#">Today</a></li>
+			<li class="divider"></li>
+			<li><a href="#">Tomorrow</a></li>
+			<li class="divider"></li>
+			<li>10 Oct,Mon</li>
+			<li class="divider"></li>
+			<li>11 Oct,Tue</li>
+		</ul>
+  <div class="btn-group">
+		<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+		Hindi<span class="caret"></span></button>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="#">Hindi</a></li>
+			<li class="divider"></li>
+			<li><a href="#">English</a></li>
+		</ul>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+    2D <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">2D</a></li>
+	  <li class="divider"></li>
+      <li><a href="#">3D</a></li>
+    </ul>
+  </div>
+</div>
+-->
+<br>
+<br>
+<br>
+&nbsp&nbsp&nbsp &nbsp
+&nbsp
+&nbsp
+&nbsp
+<div class="row">
+	<div class="col-md-3">
+		<b>Location And Theatre:
+	</div>
+	<div class="col-md-3">
+	  <form>
+		<select class="bg-3">
+			<option> - THEATRE - </option>
+			<option value="1">Cinemax-Vashi</option>
+			<option value="2">PVR Phoenix MarketCity-Kurla</option>
+		
+			<!--<option value="6">INOX Raghuleela Mall-Vashi</option>
+			<option value="7">Fun Cinemas-Chembur</option>
+			<option value="8">INOX Glomax Mall-Kharghar</option>
+			<option value="9">BIG Cinemas: IMAX-Wadala </option>
+			<option value="10">Cinepolis VIP Viviana Mall-Thane</option>
+		--></select>
+	  </form>
+	</div></b>
+</div>
+<br>
+<br>
+<br>
+<div class="row">
+	<div class="col-md-3">
+		<b>Timings:
+	</div>
+	<div class="col-md-3">
+	  <form class="form-inline">
+		<select class="bg-3">
+			<option> - TIMINGS - </option>       
+
+		<option value="1">09:15 AM</option>
+			<option value="2">02:30 PM</option>
+			<option value="3">08:30 PM</option>
+		</select>
+	  </form>
+	</div></b>
+</div>
+
+<!--SEATING ARRANGEMENTS-->
+Booked = <canvas id="myCanvas" width="40" height="30" >
+</canvas>
+
+<script>
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.fillRect(20, 20, 150, 100);
+
+</script>
+  Available =<canvas id="myCanvas1" width="40" height="30">
+</canvas>
+<script>
+var c = document.getElementById("myCanvas1");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "yellow";
+ctx.fillRect(20, 20, 150, 100);
+</script>
+<br>
+
+<br>8th ROW:  <br>
+<div class="main">
+<div tabindex="-1" id="subdiv" ></div>
+<div tabindex="-1" id="subdiv" ></div>
+<div tabindex="-1" id="subdiv" ></div>
+<div tabindex="-1" id="subdiv" ></div>
+<div tabindex="-1" id="subdiv" ></div>
+</div>
+
+<div class="main2">
+<div tabindex="-1" id="subdiv2" ></div>
+<div tabindex="-1" id="subdiv2" ></div>
+<div tabindex="-1" id="subdiv2" ></div>
+<div tabindex="-1" id="subdiv2" ></div>
+<div tabindex="-1" id="subdiv2" ></div>
+</div>
+
+<div class="main3">
+<div tabindex="-1" id="subdiv3" ></div>
+<div tabindex="-1" id="subdiv3" ></div>
+<div tabindex="-1" id="subdiv3" ></div>
+<div tabindex="-1" id="subdiv3" ></div>
+<div tabindex="-1" id="subdiv3" ></div>
+</div>
+
+<div class="main4">
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+</div>
+<br>
+
+<br>7th ROW:  <br>
+<div class="main">
+<div tabindex="-1" id="subdiv" ></div>
+<div tabindex="-1" id="subdiv" ></div>
+<div tabindex="-1" id="subdiv" ></div>
+<div tabindex="-1" id="subdiv" ></div>
+<div tabindex="-1" id="subdiv" ></div>
+</div>
+
+<div class="main2">
+<div tabindex="-1" id="subdiv2" ></div>
+<div tabindex="-1" id="subdiv2" ></div>
+<div tabindex="-1" id="subdiv2" ></div>
+<div tabindex="-1" id="subdiv2" ></div>
+<div tabindex="-1" id="subdiv2" ></div>
+</div>
+
+<div class="main3">
+<div tabindex="-1" id="subdiv3" ></div>
+<div tabindex="-1" id="subdiv3" ></div>
+<div tabindex="-1" id="subdiv3" ></div>
+<div tabindex="-1" id="subdiv3" ></div>
+<div tabindex="-1" id="subdiv3" ></div>
+</div>
+
+<div class="main4">
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+</div>
+<br>
+
+<br>6th ROW:  <br>
+<div class="main">
+<div tabindex="-1" id="subdiv" ></div>
+<div tabindex="-1" id="subdiv" ></div>
+<div tabindex="-1" id="subdiv" ></div>
+<div tabindex="-1" id="subdiv" ></div>
+<div tabindex="-1" id="subdiv" ></div>
+</div>
+
+<div class="main2">
+<div tabindex="-1" id="subdiv2" ></div>
+<div tabindex="-1" id="subdiv2" ></div>
+<div tabindex="-1" id="subdiv2" ></div>
+<div tabindex="-1" id="subdiv2" ></div>
+<div tabindex="-1" id="subdiv2" ></div>
+</div>
+
+<div class="main3">
+<div tabindex="-1" id="subdiv3" ></div>
+<div tabindex="-1" id="subdiv3" ></div>
+<div tabindex="-1" id="subdiv3" ></div>
+<div tabindex="-1" id="subdiv3" ></div>
+<div tabindex="-1" id="subdiv3" ></div>
+</div>
+
+<div class="main4">
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+</div>
+<br>
+
+<br>5th ROW:  <br>
+<div class="main">
+<div tabindex="-1" id="subdiv" ></div>
+<div tabindex="-1" id="subdiv" ></div>
+<div tabindex="-1" id="subdiv" ></div>
+<div tabindex="-1" id="subdiv" ></div>
+<div tabindex="-1" id="subdiv" ></div>
+</div>
+
+<div class="main2">
+<div tabindex="-1" id="subdiv2" ></div>
+<div tabindex="-1" id="subdiv2" ></div>
+<div tabindex="-1" id="subdiv2" ></div>
+<div tabindex="-1" id="subdiv2" ></div>
+<div tabindex="-1" id="subdiv2" ></div>
+</div>
+
+<div class="main3">
+<div tabindex="-1" id="subdiv3" ></div>
+<div tabindex="-1" id="subdiv3" ></div>
+<div tabindex="-1" id="subdiv3" ></div>
+<div tabindex="-1" id="subdiv3" ></div>
+<div tabindex="-1" id="subdiv3" ></div>
+</div>
+
+<div class="main4">
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+</div>
+<br>
+
+<br>4th ROW:  <br>
+<div class="main">		
+<div tabindex="-1" id="subdiv" onclick="myFunction(this)"></div>
+<script>
+function myFunction(divObj) {
+    divObj.style.background="#000000";
+}
+</script>
+
+<div tabindex="-1" id="subdiv"></div>
+<div tabindex="-1" id="subdiv"></div>
+<div tabindex="-1" id="subdiv"></div>
+<div tabindex="-1" id="subdiv"></div>
+</div>
+
+<div class="main2">
+<div tabindex="-1" id="subdiv2"></div>
+<div tabindex="-1" id="subdiv2"></div>
+<div tabindex="-1" id="subdiv2"></div>
+<div tabindex="-1" id="subdiv2"></div>
+<div tabindex="-1" id="subdiv2"></div>
+</div>
+
+<div class="main3">
+<div tabindex="-1" id="subdiv3"></div>
+<div tabindex="-1" id="subdiv3"></div>
+<div tabindex="-1" id="subdiv3"></div>
+<div tabindex="-1" id="subdiv3"></div>
+<div tabindex="-1" id="subdiv3"></div>
+</div>
+
+<div class="main4">
+<div tabindex="-1" id="subdiv4"></div>
+<div tabindex="-1" id="subdiv4"></div>
+<div tabindex="-1" id="subdiv4"></div>
+<div tabindex="-1" id="subdiv4"></div>
+<div tabindex="-1" id="subdiv4" ></div>
+</div>
+<br>
+
+<br>3rd ROW:  <br>
+<div class="main">
+<div tabindex="-1" id="subdiv"></div>
+<div tabindex="-1" id="subdiv"></div>
+<div tabindex="-1" id="subdiv"></div>
+<div tabindex="-1" id="subdiv"></div>
+<div tabindex="-1" id="subdiv"></div>
+
+</div>
+
+<div class="main2">
+<div tabindex="-1" id="subdiv2"></div>
+<div tabindex="-1" id="subdiv2"></div>
+<div tabindex="-1" id="subdiv2"></div>
+<div tabindex="-1" id="subdiv2"></div>
+<div tabindex="-1" id="subdiv2"></div>
+</div>
+
+<div class="main3">
+<div tabindex="-1" id="subdiv3"></div>
+<div tabindex="-1" id="subdiv3"></div>
+<div tabindex="-1" id="subdiv3"></div>
+<div tabindex="-1" id="subdiv3"></div>
+<div tabindex="-1" id="subdiv3"></div>
+</div>
+
+<div class="main4">
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+</div>
+<br>
+
+<br>2nd ROW:  <br>
+<div class="main">
+<div tabindex="-1" id="subdiv" ></div>
+<div tabindex="-1" id="subdiv" ></div>
+<div tabindex="-1" id="subdiv" ></div>
+<div tabindex="-1" id="subdiv" ></div>
+<div tabindex="-1" id="subdiv" ></div>
+</div>
+
+<div class="main2">
+<div tabindex="-1" id="subdiv2" ></div>
+<div tabindex="-1" id="subdiv2" ></div>
+<div tabindex="-1" id="subdiv2" ></div>
+<div tabindex="-1" id="subdiv2" ></div>
+<div tabindex="-1" id="subdiv2" ></div>
+</div>
+
+<div class="main3">
+<div tabindex="-1" id="subdiv3" ></div>
+<div tabindex="-1" id="subdiv3" ></div>
+<div tabindex="-1" id="subdiv3" ></div>
+<div tabindex="-1" id="subdiv3" ></div>
+<div tabindex="-1" id="subdiv3" ></div>
+</div>
+
+<div class="main4">
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+</div>
+<br>
+
+<br>1st ROW:  <br>
+<div class="main">
+<div tabindex="-1" id="subdiv" ></div>
+<div tabindex="-1" id="subdiv" ></div>
+<div tabindex="-1" id="subdiv" ></div>
+<div tabindex="-1" id="subdiv" ></div>
+<div tabindex="-1" id="subdiv" ></div>
+</div>
+
+<div class="main2">
+<div tabindex="-1" id="subdiv2" ></div>
+<div tabindex="-1" id="subdiv2" ></div>
+<div tabindex="-1" id="subdiv2" ></div>
+<div tabindex="-1" id="subdiv2" ></div>
+<div tabindex="-1" id="subdiv2" ></div>
+</div>
+
+<div class="main3">
+<div tabindex="-1" id="subdiv3" ></div>
+<div tabindex="-1" id="subdiv3" ></div>
+<div tabindex="-1" id="subdiv3" ></div>
+<div tabindex="-1" id="subdiv3" ></div>
+<div tabindex="-1" id="subdiv3" ></div>
+</div>
+
+<div class="main4">
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+<div tabindex="-1" id="subdiv4" ></div>
+</div>
+<br>
+
+<div>
+------------------------------------------------------------------------------------	 
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSCREEN
+</div>
+
+<br>
+<!--<div class="container-fluid">
+	<h3>ROW 1</h3>
+	<div class="row">
+		<div class="col-md-1">
+			<input type="checkbox" name="1" value="1"><br>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="2" value="2">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<span class="glyphicon glyphicon-unchecked logo"></span>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="4" value="4"><br>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="5" value="5">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="6" value="6">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="7" value="7">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="8" value="8">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="9" value="9">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="10" value="10">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="11" value="11">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="12" value="12">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+	</div>
+	<h3>ROW 2</h3>
+	<div class="row">
+		<div class="col-md-1">
+			<input type="checkbox" name="1" value="1">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="2" value="2">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="3" value="3">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="4" value="4">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="5" value="5">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="6" value="6">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="7" value="7">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="8" value="8">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="9" value="9">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="10" value="10">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="11" value="11">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="12" value="12">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+	</div>
+	<h3>ROW 3</h3>
+	<div class="row">
+		<div class="col-md-1">
+			<input type="checkbox" name="1" value="1">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="2" value="2">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="3" value="3">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="4" value="4">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="5" value="5">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="6" value="6">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="7" value="7">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="8" value="8">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="9" value="9">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="10" value="10">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="11" value="11">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="12" value="12">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+	</div>
+	<h3>ROW 4</h3>
+	<div class="row">
+		<div class="col-md-1">
+			<input type="checkbox" name="1" value="1">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="2" value="2">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="3" value="3">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="4" value="4">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="5" value="5">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="6" value="6">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="7" value="7">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="8" value="8">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="9" value="9">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="10" value="10">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="11" value="11">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="12" value="12">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+	</div>
+	<h3>ROW 5</h3>
+	<div class="row">
+		<div class="col-md-1">
+			<input type="checkbox" name="1" value="1">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="2" value="2">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="3" value="3">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="4" value="4">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="5" value="5">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="6" value="6">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="7" value="7">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="8" value="8">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="9" value="9">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="10" value="10">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="11" value="11">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="12" value="12">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+	</div>
+	<h3>ROW 6</h3>
+     <div class="row">
+		<div class="col-md-1">
+			<input type="checkbox" name="1" value="1">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="2" value="2">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="3" value="3">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="4" value="4">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="5" value="5">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="6" value="6">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="7" value="7">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="8" value="8">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="9" value="9">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="10" value="10">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="11" value="11">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="12" value="12">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+	</div>
+	<h3>ROW 7</h3>
+	<div class="row">
+		<div class="col-md-1">
+			<input type="checkbox" name="1" value="1">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="2" value="2">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="3" value="3">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="4" value="4">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="5" value="5">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="6" value="6">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="7" value="7">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="8" value="8">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="9" value="9">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="10" value="10">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="11" value="11">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="12" value="12">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+	</div>
+	<h3>ROW 8</h3>
+	<div class="row">
+		<div class="col-md-1">
+			<input type="checkbox" name="1" value="1">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="2" value="2">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="3" value="3">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="4" value="4">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="5" value="5">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="6" value="6">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="7" value="7">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="8" value="8">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="9" value="9">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="10" value="10">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="11" value="11">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="12" value="12">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+	</div>
+	<h3>ROW 9</h3>
+	<div class="row">
+		<div class="col-md-1">
+			<input type="checkbox" name="1" value="1">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="2" value="2">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="3" value="3">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="4" value="4">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="5" value="5">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="6" value="6">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="7" value="7">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="8" value="8">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="9" value="9">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="10" value="10">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="11" value="11">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="12" value="12">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+	</div>
+	<h3>ROW 10</h3>
+	<div class="row">
+		<div class="col-md-1">
+			<input type="checkbox" name="1" value="1">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="2" value="2">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="3" value="3">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="4" value="4">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="5" value="5">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="6" value="6">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="7" value="7">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="8" value="8">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="9" value="9">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="10" value="10">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="11" value="11">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+		<div class="col-md-1">
+			<input type="checkbox" name="12" value="12">
+			<label for="1" style="font-family: 'SExtralight'; font-size:14px;"></label>
+		</div>
+	</div>
+	<br>
+	<!-- Trigger the modal with a button --> 	
+	<br>
+	<a href="#myModal" class="btn btn-success" data-toggle="modal">Proceed To Payment</a>
+	<!-- Modal -->
+	<div id="myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->	
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Confirmation Box</h4>
+				</div>
+				<div class="modal-body">
+					<p>You have selected n tickets</p>
+					<p>Do you want to continue?</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<a href="payment.html" class="btn btn-success">Proceed</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--FOOTER-->
+<footer class="container-fluid bg-2 text-center" id="contact">
+  <div>
+  <b>
+  <h4><p>&copy IT'S SHOW TIME</p>
+  <p>Email Id:itsshowtime@gmail.com</p>
+  <p>Mob No:97028 85311</p></h4>
+  <p><h1><a href="https://www.facebook.com/"<i class="fa fa-facebook logo-1"></a></i>
+  &nbsp <a href="https://www.linkedin.com/"<i class="fa fa-linkedin logo-1"></a></i>
+  &nbsp <a href="https://twitter.com/"<i class="fa fa-twitter logo-1"></a></i></h1>
+  </p>
+  </b>
+</div>  
+</footer>
+
+<!--to add :payment and acknowledgement-->
+</body>
+</html>

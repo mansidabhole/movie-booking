@@ -1,0 +1,26 @@
+h1
+{
+	color:red;
+}
+
+body
+{
+	text-align:center;
+	background:#7FFFD4;
+}
+
+table
+{
+	/*background:#A52A2A;*/
+	margin:black;
+	border: 3px solid black;
+    border-collapse: collapse;
+	border-spacing: 5px;
+	padding: 15px;
+}
+.jumbotron {
+     background-color: #f4511e; /* Orange */
+     color: #ffffff;
+	 padding-top: 90px;
+    padding-bottom: 70px;
+    }
